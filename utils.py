@@ -74,14 +74,6 @@ def buildDict(vocab_path):
 		Voc2ID.setdefault(term.replace('\n',''), current_id)
 		ID2Voc.setdefault(current_id, term.replace('\n',''))
 		current_id += 1
-	# Voc2ID_json = json.dumps(Voc2ID)
-	# ID2Voc_json = json.dumps(ID2Voc)
-	# f1 = open("Voc2ID.json", "w")
-	# f1.write(Voc2ID_json)
-	# f1.close()
-	# f2 = open("ID2Voc.json", "w")
-	# f2.write(ID2Voc_json)
-	# f2.close()
 	return Voc2ID, ID2Voc
 
 
